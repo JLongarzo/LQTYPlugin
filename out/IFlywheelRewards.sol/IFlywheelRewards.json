@@ -1,0 +1,427 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "flywheel",
+      "outputs": [
+        {
+          "internalType": "contract FlywheelCore",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract ERC20",
+          "name": "strategy",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "lastUpdatedTimestamp",
+          "type": "uint32"
+        }
+      ],
+      "name": "getAccruedRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "rewards",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rewardToken",
+      "outputs": [
+        {
+          "internalType": "contract ERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+    "exportedSymbols": {
+      "ERC20": [
+        13776
+      ],
+      "FlywheelCore": [
+        2285
+      ],
+      "IFlywheelRewards": [
+        10408
+      ]
+    },
+    "id": 10409,
+    "license": "AGPL-3.0-only",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10377,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "42:23:4"
+      },
+      {
+        "absolutePath": "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/solmate/src/tokens/ERC20.sol",
+        "file": "solmate/tokens/ERC20.sol",
+        "id": 10379,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 10409,
+        "sourceUnit": 13777,
+        "src": "67:47:4",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10378,
+              "name": "ERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "75:5:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/flywheel-v2/src/FlywheelCore.sol",
+        "file": "../FlywheelCore.sol",
+        "id": 10381,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 10409,
+        "sourceUnit": 2286,
+        "src": "115:49:4",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10380,
+              "name": "FlywheelCore",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "src": "123:12:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IFlywheelRewards",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 10382,
+          "nodeType": "StructuredDocumentation",
+          "src": "166:1004:4",
+          "text": "@title Rewards Module for Flywheel\n@notice Flywheel is a general framework for managing token incentives.\nIt takes reward streams to various *strategies* such as staking LP tokens and divides them among *users* of those strategies.\nThe Rewards module is responsible for:\n determining the ongoing reward amounts to entire strategies (core handles the logic for dividing among users)\n actually holding rewards that are yet to be claimed\nThe reward stream can follow arbitrary logic as long as the amount of rewards passed to flywheel core has been sent to this contract.\nDifferent module strategies include:\n a static reward rate per second\n a decaying reward rate\n a dynamic just-in-time reward stream\n liquid governance reward delegation (Curve Gauge style)\nSECURITY NOTE: The rewards strategy should be smooth and continuous, to prevent gaming the reward distribution by frontrunning."
+        },
+        "fullyImplemented": false,
+        "id": 10408,
+        "linearizedBaseContracts": [
+          10408
+        ],
+        "name": "IFlywheelRewards",
+        "nameLocation": "1181:16:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 10383,
+              "nodeType": "StructuredDocumentation",
+              "src": "1204:305:4",
+              "text": "@notice calculate the rewards amount accrued to a strategy since the last update.\n@param strategy the strategy to accrue rewards for.\n@param lastUpdatedTimestamp the last time rewards were accrued for the strategy.\n@return rewards the amount of rewards accrued to the market"
+            },
+            "functionSelector": "b334db7b",
+            "id": 10393,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAccruedRewards",
+            "nameLocation": "1523:17:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10389,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10386,
+                  "mutability": "mutable",
+                  "name": "strategy",
+                  "nameLocation": "1547:8:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10393,
+                  "src": "1541:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$13776",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "id": 10385,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 10384,
+                      "name": "ERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 13776,
+                      "src": "1541:5:4"
+                    },
+                    "referencedDeclaration": 13776,
+                    "src": "1541:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$13776",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10388,
+                  "mutability": "mutable",
+                  "name": "lastUpdatedTimestamp",
+                  "nameLocation": "1564:20:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10393,
+                  "src": "1557:27:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint32",
+                    "typeString": "uint32"
+                  },
+                  "typeName": {
+                    "id": 10387,
+                    "name": "uint32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1557:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint32",
+                      "typeString": "uint32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1540:45:4"
+            },
+            "returnParameters": {
+              "id": 10392,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10391,
+                  "mutability": "mutable",
+                  "name": "rewards",
+                  "nameLocation": "1612:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10393,
+                  "src": "1604:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10390,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1604:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1603:17:4"
+            },
+            "scope": 10408,
+            "src": "1514:107:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 10394,
+              "nodeType": "StructuredDocumentation",
+              "src": "1627:44:4",
+              "text": "@notice return the flywheel core address"
+            },
+            "functionSelector": "7acf5b92",
+            "id": 10400,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "flywheel",
+            "nameLocation": "1685:8:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10395,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1693:2:4"
+            },
+            "returnParameters": {
+              "id": 10399,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10398,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10400,
+                  "src": "1719:12:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_FlywheelCore_$2285",
+                    "typeString": "contract FlywheelCore"
+                  },
+                  "typeName": {
+                    "id": 10397,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 10396,
+                      "name": "FlywheelCore",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 2285,
+                      "src": "1719:12:4"
+                    },
+                    "referencedDeclaration": 2285,
+                    "src": "1719:12:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_FlywheelCore_$2285",
+                      "typeString": "contract FlywheelCore"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1718:14:4"
+            },
+            "scope": 10408,
+            "src": "1676:57:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 10401,
+              "nodeType": "StructuredDocumentation",
+              "src": "1739:66:4",
+              "text": "@notice return the reward token associated with flywheel core."
+            },
+            "functionSelector": "f7c618c1",
+            "id": 10407,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "rewardToken",
+            "nameLocation": "1819:11:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10402,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1830:2:4"
+            },
+            "returnParameters": {
+              "id": 10406,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10405,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10407,
+                  "src": "1856:5:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ERC20_$13776",
+                    "typeString": "contract ERC20"
+                  },
+                  "typeName": {
+                    "id": 10404,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 10403,
+                      "name": "ERC20",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 13776,
+                      "src": "1856:5:4"
+                    },
+                    "referencedDeclaration": 13776,
+                    "src": "1856:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20_$13776",
+                      "typeString": "contract ERC20"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1855:7:4"
+            },
+            "scope": 10408,
+            "src": "1810:53:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10409,
+        "src": "1171:694:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "42:1824:4"
+  }
+}

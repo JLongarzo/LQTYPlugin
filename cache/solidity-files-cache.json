@@ -1,0 +1,1919 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "sources": "src",
+    "tests": "test",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1647984369178,
+      "contentHash": "5d45a46528eaf8a26f0a8d93669f3148",
+      "sourceName": "lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.23",
+      "artifacts": {
+        "DSTest": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/flywheel-v2/src/FlywheelCore.sol": {
+      "lastModificationDate": 1649710422173,
+      "contentHash": "5179ed5e3ec2e7d80d783cfc40225873",
+      "sourceName": "lib/flywheel-v2/src/FlywheelCore.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "FlywheelCore": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "FlywheelCore.sol/FlywheelCore.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/flywheel-v2/src/console.sol": {
+      "lastModificationDate": 1649353275000,
+      "contentHash": "907ccc8c5df3f256f3e4c4a215f521a1",
+      "sourceName": "lib/flywheel-v2/src/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "console.sol/console.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol": {
+      "lastModificationDate": 1649174091139,
+      "contentHash": "c3e92284356bbbfb8183fcdd1f407290",
+      "sourceName": "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "IFlywheelBooster": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IFlywheelBooster.sol/IFlywheelBooster.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol": {
+      "lastModificationDate": 1649174091139,
+      "contentHash": "a59ebbda0e8448bf0abf819e1c8d8bdf",
+      "sourceName": "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "IFlywheelRewards": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IFlywheelRewards.sol/IFlywheelRewards.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1648144490728,
+      "contentHash": "5e242d192cc1a77ac825a45b4c89ef29",
+      "sourceName": "lib/forge-std/src/Vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.0",
+      "artifacts": {
+        "Vm": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Vm.sol/Vm.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/forge-std/src/stdlib.sol": {
+      "lastModificationDate": 1648144490728,
+      "contentHash": "edff4c1f9c2c81f392ec796f11688f20",
+      "sourceName": "lib/forge-std/src/stdlib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "stdCheats": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "stdlib.sol/stdCheats.json"
+        },
+        "stdError": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "stdlib.sol/stdError.json"
+        },
+        "stdStorage": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "stdlib.sol/stdStorage.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/solmate/src/auth/Auth.sol": {
+      "lastModificationDate": 1647987089920,
+      "contentHash": "76a634d0a382819537ecf118eb247a84",
+      "sourceName": "lib/solmate/src/auth/Auth.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Auth": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Auth.sol/Auth.json"
+        },
+        "Authority": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Auth.sol/Authority.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/solmate/src/mixins/ERC4626.sol": {
+      "lastModificationDate": 1647987089921,
+      "contentHash": "199b3ae20cd6ac4434c3f459cdd1c7b0",
+      "sourceName": "lib/solmate/src/mixins/ERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC4626": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC4626.sol/ERC4626.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/solmate/src/test/utils/DSTestPlus.sol": {
+      "lastModificationDate": 1647987089923,
+      "contentHash": "6af71d1a807ec87f0754de2b1fc19980",
+      "sourceName": "lib/solmate/src/test/utils/DSTestPlus.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/solmate/src/test/utils/Hevm.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "DSTestPlus": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "DSTestPlus.sol/DSTestPlus.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/solmate/src/test/utils/Hevm.sol": {
+      "lastModificationDate": 1647987089923,
+      "contentHash": "60742aa83f930a4226fbe7676f06b607",
+      "sourceName": "lib/solmate/src/test/utils/Hevm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Hevm": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Hevm.sol/Hevm.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/solmate/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1648154878611,
+      "contentHash": "95ac3ff5640ab4a57dc4cdc2992e79c0",
+      "sourceName": "lib/solmate/src/tokens/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/solmate/src/utils/FixedPointMathLib.sol": {
+      "lastModificationDate": 1647987089926,
+      "contentHash": "5d62867f7d9345aa3670871e21c327a7",
+      "sourceName": "lib/solmate/src/utils/FixedPointMathLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "FixedPointMathLib": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "FixedPointMathLib.sol/FixedPointMathLib.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/solmate/src/utils/SafeCastLib.sol": {
+      "lastModificationDate": 1647987089926,
+      "contentHash": "680ddfaaf8d1e494b52a29e6d4dba604",
+      "sourceName": "lib/solmate/src/utils/SafeCastLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "SafeCastLib": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "SafeCastLib.sol/SafeCastLib.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/lib/solmate/src/utils/SafeTransferLib.sol": {
+      "lastModificationDate": 1647987089926,
+      "contentHash": "19f4ba71d9e7171381e98bb29608ea3a",
+      "sourceName": "lib/solmate/src/utils/SafeTransferLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "SafeTransferLib": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "SafeTransferLib.sol/SafeTransferLib.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/Fuse-Flywheel.sol": {
+      "lastModificationDate": 1649350513758,
+      "contentHash": "bddeecbfe5d6e2c2cf70b081dc903d28",
+      "sourceName": "src/Fuse-Flywheel.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "FuseFlywheelCore": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "Fuse-Flywheel.sol/FuseFlywheelCore.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/FuseFlywheelRewardsPlugin.sol": {
+      "lastModificationDate": 1649902168785,
+      "contentHash": "59033fb88bdcbe783fe2c8bc5a5f2e17",
+      "sourceName": "src/FuseFlywheelRewardsPlugin.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Fuse-Flywheel.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "FuseFlywheelDynamicRewards": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "FuseFlywheelRewardsPlugin.sol/FuseFlywheelDynamicRewards.json"
+        },
+        "ICERC20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "FuseFlywheelRewardsPlugin.sol/ICERC20.json"
+        },
+        "IERC4626": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "FuseFlywheelRewardsPlugin.sol/IERC4626.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/Interfaces/CErc20Interface.sol": {
+      "lastModificationDate": 1649350948719,
+      "contentHash": "36b79d6fc3774d21f75af9b394808ad5",
+      "sourceName": "src/Interfaces/CErc20Interface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "CErc20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "CErc20Interface.sol/CErc20.json"
+        },
+        "CErc20Delegate": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "CErc20Interface.sol/CErc20Delegate.json"
+        },
+        "CErc20PluginRewardsDelegate": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "CErc20Interface.sol/CErc20PluginRewardsDelegate.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/Interfaces/ChainlinkPriceFeedInterface.sol": {
+      "lastModificationDate": 1648921470316,
+      "contentHash": "66bbdc24d8c3c05ee9406b696c5df196",
+      "sourceName": "src/Interfaces/ChainlinkPriceFeedInterface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "AggregatorV3Interface": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ChainlinkPriceFeedInterface.sol/AggregatorV3Interface.json"
+        },
+        "ChainlinkPriceOracleV2": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ChainlinkPriceFeedInterface.sol/ChainlinkPriceOracleV2.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/Interfaces/ComptrollerInterface.sol": {
+      "lastModificationDate": 1649192523194,
+      "contentHash": "c4ceffc0c3d05181d26d8c8a4da10b73",
+      "sourceName": "src/Interfaces/ComptrollerInterface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.10",
+      "artifacts": {
+        "ComptrollerInterface": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ComptrollerInterface.sol/ComptrollerInterface.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/Interfaces/IERC20.sol": {
+      "lastModificationDate": 1648068561153,
+      "contentHash": "b440766b90ef49170f1315db5f6a0c10",
+      "sourceName": "src/Interfaces/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/Interfaces/ILQTYStaking.sol": {
+      "lastModificationDate": 1648223927643,
+      "contentHash": "8ac9cf30ef050185eb9e88ee9180e057",
+      "sourceName": "src/Interfaces/ILQTYStaking.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "ILQTYStaking": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ILQTYStaking.sol/ILQTYStaking.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/Interfaces/ILQTYToken.sol": {
+      "lastModificationDate": 1647984781513,
+      "contentHash": "f34c48033e3ecb328b363f5a409a1b05",
+      "sourceName": "src/Interfaces/ILQTYToken.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "IERC20": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ILQTYToken.sol/IERC20.json"
+        },
+        "IERC2612": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ILQTYToken.sol/IERC2612.json"
+        },
+        "ILQTYToken": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "ILQTYToken.sol/ILQTYToken.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/Interfaces/MasterPriceOracleInterface.sol": {
+      "lastModificationDate": 1648861266796,
+      "contentHash": "0da3a440e601c870e51af5294a99aed3",
+      "sourceName": "src/Interfaces/MasterPriceOracleInterface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/Interfaces/ComptrollerInterface.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "CToken": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "MasterPriceOracleInterface.sol/CToken.json"
+        },
+        "MasterPriceOracleInterface": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "MasterPriceOracleInterface.sol/MasterPriceOracleInterface.json"
+        },
+        "PriceOracle": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "MasterPriceOracleInterface.sol/PriceOracle.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/Interfaces/WETH.sol": {
+      "lastModificationDate": 1649660052077,
+      "contentHash": "d70118a17f8c7f68b0e83e4e2cb5a374",
+      "sourceName": "src/Interfaces/WETH.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "WETHInterface": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "WETH.sol/WETHInterface.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/LqtyERC4626.sol": {
+      "lastModificationDate": 1649901842970,
+      "contentHash": "d2b623f02c3281081f5ec32fc5bfaec0",
+      "sourceName": "src/LqtyERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Fuse-Flywheel.sol",
+        "src/FuseFlywheelRewardsPlugin.sol",
+        "src/Interfaces/ILQTYStaking.sol",
+        "src/Interfaces/ILQTYToken.sol",
+        "src/Interfaces/WETH.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "LqtyERC4626": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "LqtyERC4626.sol/LqtyERC4626.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/test/LqtyERC4626.t.sol": {
+      "lastModificationDate": 1649902129664,
+      "contentHash": "c942073f35cb1b30aa0c6ad6fa3fc38b",
+      "sourceName": "src/test/LqtyERC4626.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/stdlib.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/test/utils/DSTestPlus.sol",
+        "lib/solmate/src/test/utils/Hevm.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Fuse-Flywheel.sol",
+        "src/FuseFlywheelRewardsPlugin.sol",
+        "src/Interfaces/ILQTYStaking.sol",
+        "src/Interfaces/ILQTYToken.sol",
+        "src/Interfaces/WETH.sol",
+        "src/LqtyERC4626.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "ContractTest": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "LqtyERC4626.t.sol/ContractTest.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/test/console.sol": {
+      "lastModificationDate": 1649353211134,
+      "contentHash": "907ccc8c5df3f256f3e4c4a215f521a1",
+      "sourceName": "src/test/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "console.sol/console.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/GitHub/LQTY-Plugin/src/test/deploy.t.sol": {
+      "lastModificationDate": 1649902728304,
+      "contentHash": "8f41dd5548c83bb1b7c7cec5189cd1d7",
+      "sourceName": "src/test/deploy.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/stdlib.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/test/utils/DSTestPlus.sol",
+        "lib/solmate/src/test/utils/Hevm.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Fuse-Flywheel.sol",
+        "src/FuseFlywheelRewardsPlugin.sol",
+        "src/Interfaces/CErc20Interface.sol",
+        "src/Interfaces/ChainlinkPriceFeedInterface.sol",
+        "src/Interfaces/ComptrollerInterface.sol",
+        "src/Interfaces/ILQTYStaking.sol",
+        "src/Interfaces/ILQTYToken.sol",
+        "src/Interfaces/MasterPriceOracleInterface.sol",
+        "src/Interfaces/WETH.sol",
+        "src/LqtyERC4626.sol",
+        "src/test/console.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "DeploymentTest": {
+          "0.8.10+commit.fc410830.Darwin.appleclang": "deploy.t.sol/DeploymentTest.json"
+        }
+      }
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1647984369178,
+      "contentHash": "5d45a46528eaf8a26f0a8d93669f3148",
+      "sourceName": "lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.23",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/flywheel-v2/src/console.sol": {
+      "lastModificationDate": 1649353275000,
+      "contentHash": "907ccc8c5df3f256f3e4c4a215f521a1",
+      "sourceName": "lib/flywheel-v2/src/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1648144490728,
+      "contentHash": "5e242d192cc1a77ac825a45b4c89ef29",
+      "sourceName": "lib/forge-std/src/Vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/forge-std/src/stdlib.sol": {
+      "lastModificationDate": 1648144490728,
+      "contentHash": "edff4c1f9c2c81f392ec796f11688f20",
+      "sourceName": "lib/forge-std/src/stdlib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/solmate/src/mixins/ERC4626.sol": {
+      "lastModificationDate": 1647987089921,
+      "contentHash": "199b3ae20cd6ac4434c3f459cdd1c7b0",
+      "sourceName": "lib/solmate/src/mixins/ERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/solmate/src/test/utils/DSTestPlus.sol": {
+      "lastModificationDate": 1647987089923,
+      "contentHash": "6af71d1a807ec87f0754de2b1fc19980",
+      "sourceName": "lib/solmate/src/test/utils/DSTestPlus.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/solmate/src/test/utils/Hevm.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/solmate/src/test/utils/Hevm.sol": {
+      "lastModificationDate": 1647987089923,
+      "contentHash": "60742aa83f930a4226fbe7676f06b607",
+      "sourceName": "lib/solmate/src/test/utils/Hevm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/solmate/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1648154878611,
+      "contentHash": "95ac3ff5640ab4a57dc4cdc2992e79c0",
+      "sourceName": "lib/solmate/src/tokens/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/solmate/src/utils/FixedPointMathLib.sol": {
+      "lastModificationDate": 1647987089926,
+      "contentHash": "5d62867f7d9345aa3670871e21c327a7",
+      "sourceName": "lib/solmate/src/utils/FixedPointMathLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/lib/solmate/src/utils/SafeTransferLib.sol": {
+      "lastModificationDate": 1647987089926,
+      "contentHash": "19f4ba71d9e7171381e98bb29608ea3a",
+      "sourceName": "lib/solmate/src/utils/SafeTransferLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/src/Interfaces/CErc20Interface.sol": {
+      "lastModificationDate": 1649350948719,
+      "contentHash": "36b79d6fc3774d21f75af9b394808ad5",
+      "sourceName": "src/Interfaces/CErc20Interface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/src/Interfaces/ChainlinkPriceFeedInterface.sol": {
+      "lastModificationDate": 1648921470316,
+      "contentHash": "66bbdc24d8c3c05ee9406b696c5df196",
+      "sourceName": "src/Interfaces/ChainlinkPriceFeedInterface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/src/Interfaces/IERC20.sol": {
+      "lastModificationDate": 1648068561153,
+      "contentHash": "b440766b90ef49170f1315db5f6a0c10",
+      "sourceName": "src/Interfaces/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/src/Interfaces/ILQTYStaking.sol": {
+      "lastModificationDate": 1648223927643,
+      "contentHash": "8ac9cf30ef050185eb9e88ee9180e057",
+      "sourceName": "src/Interfaces/ILQTYStaking.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/src/Interfaces/ILQTYToken.sol": {
+      "lastModificationDate": 1647984781513,
+      "contentHash": "f34c48033e3ecb328b363f5a409a1b05",
+      "sourceName": "src/Interfaces/ILQTYToken.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/src/LqtyERC4626.sol": {
+      "lastModificationDate": 1649901794206,
+      "contentHash": "17b28d9a39a661effad26e3c842035a1",
+      "sourceName": "src/LqtyERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Fuse-Flywheel.sol",
+        "src/FuseFlywheelRewardsPlugin.sol",
+        "src/Interfaces/ILQTYStaking.sol",
+        "src/Interfaces/ILQTYToken.sol",
+        "src/Interfaces/WETH.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/src/test/LqtyERC4626.t.sol": {
+      "lastModificationDate": 1649710523224,
+      "contentHash": "9d8e87b5501449c1aebd137192109fc9",
+      "sourceName": "src/test/LqtyERC4626.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/stdlib.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/test/utils/DSTestPlus.sol",
+        "lib/solmate/src/test/utils/Hevm.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Fuse-Flywheel.sol",
+        "src/FuseFlywheelRewardsPlugin.sol",
+        "src/Interfaces/ILQTYStaking.sol",
+        "src/Interfaces/ILQTYToken.sol",
+        "src/Interfaces/WETH.sol",
+        "src/LqtyERC4626.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {}
+    },
+    "/Users/jacklongarzo/Documents/LQTYPlugin/src/test/deploy.t.sol": {
+      "lastModificationDate": 1649725796510,
+      "contentHash": "2461999f72c1ce1aca18cc50b466ea6d",
+      "sourceName": "src/test/deploy.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/flywheel-v2/src/FlywheelCore.sol",
+        "lib/flywheel-v2/src/console.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelBooster.sol",
+        "lib/flywheel-v2/src/interfaces/IFlywheelRewards.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/stdlib.sol",
+        "lib/solmate/src/auth/Auth.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/test/utils/DSTestPlus.sol",
+        "lib/solmate/src/test/utils/Hevm.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeCastLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/Fuse-Flywheel.sol",
+        "src/FuseFlywheelRewardsPlugin.sol",
+        "src/Interfaces/CErc20Interface.sol",
+        "src/Interfaces/ChainlinkPriceFeedInterface.sol",
+        "src/Interfaces/ComptrollerInterface.sol",
+        "src/Interfaces/ILQTYStaking.sol",
+        "src/Interfaces/ILQTYToken.sol",
+        "src/Interfaces/MasterPriceOracleInterface.sol",
+        "src/Interfaces/WETH.sol",
+        "src/LqtyERC4626.sol",
+        "src/test/console.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {}
+    }
+  }
+}
